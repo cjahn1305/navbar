@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram-Klon</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #navbar {
+            /* ... (Dein bestehendes CSS für #navbar) */
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center; /* Zentriere die Bilder horizontal */
+        }
+
+        .image-item {
+            max-width: 300px; /* Maximale Breite für jedes Bild */
+            text-align: center;
+            margin-bottom: 20px; /* Abstand zwischen den Bildern */
+        }
+
+        .image-item img {
+            width: 100%;
+            border-radius: 10px; /* Ecken abrunden */
+        }
+
+        .image-caption {
+            margin-top: 10px;
+            /* Weitere Stiloptionen für die Bildunterschrift */
+        }
+    </style>
 </head>
 <body>
     <div id="navbar">
@@ -18,7 +46,39 @@
         </div>
     </div>
 
-    <!-- Weitere Inhalte deiner Webseite hier -->
+    <!-- Bilder einfügen -->
+    <div class="image-container">
+        <div class="image-item">
+            <img src="images/IMG_2.jpg" alt="Auf dem Holzweg">
+            <div class="image-caption">Auf dem Holzweg</div>
+        </div>
+        <div class="image-item">
+            <img src="images/IMG_1.jpg" alt="Unterwegs">
+            <div class="image-caption">Unterwegs</div>
+        </div>
+        <div class="image-item">
+            <img src="images/IMG_3.jpg" alt="Skilangläufer">
+            <div class="image-caption">Unterwegs</div>
+        </div>
+        <div class="image-item">
+            <img src="images/IMG_4.jpg" alt="Im Wald">
+            <div class="image-caption">Unterwegs</div>
+        </div>
+        <div class="image-item">
+            <img src="images/IMG_5.jpg" alt="Holzstapel und Loipe">
+            <div class="image-caption">Unterwegs</div>
+        </div>
+        <div class="image-item">
+            <img src="images/IMG_6.jpg" alt="Spuren im Schnee">
+            <div class="image-caption">Unterwegs</div>
+        </div>
+        <div class="image-item">
+            <img src="images/IMG_7.jpg" alt="Italien">
+            <div class="image-caption">Unterwegs</div>
+        </div>
+       </div>
+
+    <!-- Weitere Inhalte meiner Webseite hier -->
 
     <script>
         function openPdf() {
@@ -27,5 +87,7 @@
     </script>
 </body>
 </html>
+
+
 
 
