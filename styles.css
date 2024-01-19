@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff; /* Hintergrundfarbe anpassen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten hinzufügen */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    gap: 20px;
+}
+
+.explore,
+.profile {
+    text-decoration: none;
+    color: #333; /* Textfarbe anpassen */
+    padding: 10px;
+    border-radius: 5px; /* Ecken abrunden */
+    background-color: #f0f0f0; /* Hintergrundfarbe anpassen */
+    transition: background-color 0.3s ease; /* Übergangseffekt hinzufügen */
+}
+
+.explore:hover,
+.profile:hover {
+    background-color: #e0e0e0; /* Hintergrundfarbe bei Hover anpassen */
+}
