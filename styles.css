@@ -45,21 +45,27 @@ body, h1, h2, h3, p, img {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between; /* Ändere die Ausrichtung auf space-between */
+    justify-content: space-between;
 }
 
 .image-item {
-    flex-basis: calc(33.333% - 20px); /* Breite auf 33.333% abzüglich des Abstands zwischen den Bildern */
+    flex-basis: calc(33.333% - 20px);
     max-width: 300px;
     text-align: center;
     margin-bottom: 20px;
+    overflow: hidden; /* Verhindert das Überlaufen von Bildern aus ihren Containern */
 }
 
 .image-item img {
     width: 100%;
-    max-height: 200px;
+    height: 100%; /* Fülle die Höhe des Containers */
     object-fit: cover;
     border-radius: 10px;
+    transition: transform 0.3s ease; /* Füge einen Übergangseffekt für das Zoomen hinzu */
+}
+
+.image-item:hover img {
+    transform: scale(1.2); /* Zoom-Effekt bei Hover */
 }
 
 .image-caption {
